@@ -8,6 +8,11 @@ A gym environment for a miniature, [F1Tenth](https://f1tenth.org/)-like racecar 
 This repository is for NTUST 2023 Reinforcement Learning in Human-Computer Interaction course - competition #1.\
 This environment is originally from [here](https://github.com/axelbr/racecar_gym).
 
+## Prerequisites
+* Anaconda or other virtual env
+* Python 3.10
+* CPU or NVIDIA GPU
+* PyTorch
 ## Installation
 
 You can install ``racecar_gym`` with the following commands:

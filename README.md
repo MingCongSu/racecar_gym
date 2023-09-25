@@ -17,6 +17,13 @@ git clone https://github.com/axelbr/racecar_gym.git
 cd racecar_gym
 pip install -e .
 ```
+### Download Maps (Tracks)
+Here is how you can do this from the command line:
+```shell_script
+cd ./models/scenes
+wget https://github.com/MingCongSu/racecar_gym/releases/download/training_tracks-v1/training_tracks.zip
+unzip training_tracks.zip
+```
 
 ## Environments
 

@@ -16,8 +16,8 @@ setup(
     version="0.0.1",
     packages=find_packages(),
     install_requires=requirements,
-    author='Axel Brunnbauer',
-    author_email='axel.brunnbauer@gmx.at',
-    description='An RL environment for a miniature racecar using the pybullet physics engine.',
-    url='https://github.com/axelbr/racecar_gym',
+    author='MingCong Su',
+    author_email='m11152014@mail.ntust.edu.tw',
+    description='NTUST 2023 Reinforcement Learning in Human-Computer Intercation course-competition#1. [A gym environment for a miniature racecar using the pybullet physics engine.]',
+    url='https://github.com/MingCongSu/racecar_gym.git',
 )

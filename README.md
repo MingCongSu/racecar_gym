@@ -12,7 +12,7 @@ This environment is originally from [here](https://github.com/axelbr/racecar_gym
 * Anaconda or other virtual env
 * Python 3.10
 * CPU or NVIDIA GPU
-* PyTorch
+* Suitable [PyTorch](https://pytorch.org/get-started/previous-versions/)
 ## Installation
 
 You can install ``racecar_gym`` with the following commands:

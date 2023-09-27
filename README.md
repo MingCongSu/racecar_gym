@@ -9,7 +9,7 @@ This repository is for NTUST 2023 Reinforcement Learning in Human-Computer Inter
 This environment is originally from [here](https://github.com/axelbr/racecar_gym).
 
 ## Prerequisites
-* Anaconda or other virtual env
+* [Anaconda](https://www.anaconda.com/) or other virtual env
 * Python 3.10
 * CPU or NVIDIA GPU
 * Suitable [PyTorch](https://pytorch.org/get-started/previous-versions/)
@@ -47,9 +47,9 @@ The observation and action space is a `Dict` holding the agents and their id's. 
 is also a `Dict`, which is described in more detail below. In general, observations are obtained through sensors and commands
 are executed by actuators. Vehicles can have multiple sensors and actuators. Those are described in the vehicle configuration
 (e.g. [differential racecar](models/vehicles/racecar/racecar.yml)). Agents, which consist of a vehicle and an assigned task,
-are specified in the scenario file (e.g. [austria.yml](scenarios/multi_austria.yml)). In this file, agents are described by the
+are specified in the scenario file (e.g. [austria.yml](scenarios/austria.yml)). In this file, agents are described by the
 sensors to use (note that they must be available in the vehicle configuration) and the corresponding task. Have a look at
-[tasks.py](racecar_gym/core/tasks.py) to see all available tasks.
+[tasks](racecar_gym/tasks/__init__.py) to see all available tasks.
 
 **Example:**
 ```yaml
@@ -72,7 +72,7 @@ One agent with id **A** is specified. The agent controls the differential drive 
 The scenario tells the agent to use only the specified sensors (lidar, pose, velocity, acceleration). 
 Optionally, one can also specify a color for the car. The default color is blue. Available colors are listed above.
 
-The task which is assigned to this agent is also identified by name (implementations can be found in [tasks.py](racecar_gym/core/tasks.py)). Task parameters are passed by the dict *params*.
+The task which is assigned to this agent is also identified by name (implementations can be found in [tasks](racecar_gym/tasks/__init__.py)). Task parameters are passed by the dict *params*.
 
 ### Observations
 

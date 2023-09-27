@@ -6,14 +6,14 @@ from play_and_evaluate import play
 
 scenario = './scenarios/custom.yml'
 output_path = './videos/racecar_test_env.mp4'
-frame_size = (640,480)
+frame_size = dict(width=640, height=480) # default frame size 
 
 # For custom scenarios:
 env = gymnasium.make(
     id='SingleAgentRaceEnv-v0', 
     scenario=scenario,
     render_mode='rgb_array_follow', # optional: 'rgb_array_birds_eye'
-    # render_options=dict(width=320, height=240) # optional
+    render_options=frame_size
 )
 with open(f'{scenario}','r') as stream:
     config = yaml.load(stream, Loader=yaml.BaseLoader)

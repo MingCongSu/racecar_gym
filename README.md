@@ -26,10 +26,22 @@ pip install -e .
 Here is how you can do this from the command line:
 ```shell_script
 cd ./models/scenes
+
+# For Linux (including WSL)
 wget https://github.com/MingCongSu/racecar_gym/releases/download/training_tracks-v1/training_tracks.zip
 unzip training_tracks.zip
-```
 
+# For Windows
+wget -O training_tracks.zip https://github.com/MingCongSu/racecar_gym/releases/download/training_tracks-v1/training_tracks.zip
+Expand-Archive -Path .\training_tracks.zip -DestinationPath ./
+
+
+```
+After installation, go back to `racecar_gym` folder and run `test_env.py` to test the environment:
+```shell_script
+## go back to racecar_gym folder
+python test_env.py
+```
 ## Environments
 
 The observation and action space is a `Dict` holding the agents and their id's. The observation and action space for a single agent 

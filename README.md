@@ -18,7 +18,7 @@ This environment is originally from [here](https://github.com/axelbr/racecar_gym
 You can install ``racecar_gym`` with the following commands:
 
 ```shell_script
-git clone https://github.com/axelbr/racecar_gym.git
+git clone https://github.com/MingCongSu/racecar_gym.git
 cd racecar_gym
 pip install -e .
 ```
@@ -34,14 +34,13 @@ unzip training_tracks.zip
 # For Windows
 wget -O training_tracks.zip https://github.com/MingCongSu/racecar_gym/releases/download/training_tracks-v1/training_tracks.zip
 Expand-Archive -Path .\training_tracks.zip -DestinationPath ./
-
-
 ```
 After installation, go back to `racecar_gym` folder and run `test_env.py` to test the environment:
 ```shell_script
 ## go back to racecar_gym folder
 python test_env.py
 ```
+There should be `racecar_test_env.mp4` under `videos` folder
 ## Environments
 
 The observation and action space is a `Dict` holding the agents and their id's. The observation and action space for a single agent 
